@@ -11,7 +11,7 @@
 <script>
 import AppLogo from './header/AppLogo.vue'
 import HeaderNavbar from './header/HeaderNavbar.vue'
-import GetInTouchBtn from './GetInTouchBtn.vue'
+import GetInTouchBtn from './buttons/GetInTouchBtn.vue'
 
 export default {
     name: 'AppHeader',
@@ -27,7 +27,6 @@ export default {
 
 <style scoped lang='scss'>
 header{
-  
   width: 1200px;
   padding: 3em 0;
   margin: 0 auto;

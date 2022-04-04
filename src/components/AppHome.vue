@@ -1,5 +1,5 @@
 <template>
-<section>
+<section class='container-bg'>
   <AppHeader/>
   <AppJumbotron/>
 </section>
@@ -19,8 +19,8 @@ export default {
 </script>
 
 <style scoped lang='scss'>
- section{
-    background-color: black;
+.container-bg{
+    color: white;
     height: 90vh;
     background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/img/bg-4.jpg'); 
  }
