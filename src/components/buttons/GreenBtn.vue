@@ -1,10 +1,13 @@
 <template>
-    <button><a href="*">Get in touch</a></button>
+    <button><a href="*">{{cta}}</a></button>
 </template>
 
 <script>
 export default {
-name: 'GetInTouchBtn'
+name: 'GreenBtn',
+props:{
+    cta:String
+}
 }
 </script>
 
@@ -14,12 +17,12 @@ name: 'GetInTouchBtn'
         text-transform: uppercase;
         font-size: 1.2rem;
         padding: .5rem 0;
-        background-color: #038483;
+        background-color: transparent;
         border: 2px solid #038483;
         border-radius:3px ;
         
         a{
-        color: white;
+        color: #038483;
         text-decoration: none;
         padding: .5rem 1.2rem;
         

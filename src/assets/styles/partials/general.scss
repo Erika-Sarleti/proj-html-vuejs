@@ -1,6 +1,26 @@
 html{
     font-family: 'Poppins', sans-serif;
+    color: #202427;
 }
 .width-1200{
 width: 1200px;
+margin: auto;
 }
+
+.subtitle{
+    color: #51bdbc;
+    text-transform: uppercase;
+  }
+  .big-title{
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1.2em;
+    .highlight{
+      background:linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba($color: #038483, $alpha: .4) 50% 85%,rgba(0,0,0,0) 85%); 
+    }
+  }
+  .text{
+    font-size: 1.3em;
+    color: #babdbe;
+    padding: 1.2em 0;
+  }

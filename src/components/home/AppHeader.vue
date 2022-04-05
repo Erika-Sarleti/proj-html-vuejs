@@ -1,9 +1,10 @@
 <template>
-  <header>
+  <header class='width-1200'>
     <AppLogo/>
     <div class="nav-section">
       <HeaderNavbar/>
-      <GetInTouchBtn/>
+      <app-btn
+      cta='Get in touch'/>
     </div> 
   </header>
 </template>
@@ -11,14 +12,14 @@
 <script>
 import AppLogo from './header/AppLogo.vue'
 import HeaderNavbar from './header/HeaderNavbar.vue'
-import GetInTouchBtn from './buttons/GetInTouchBtn.vue'
+import AppBtn from '../buttons/AppBtn.vue'
 
 export default {
     name: 'AppHeader',
     components:{ 
       AppLogo,
       HeaderNavbar,
-      GetInTouchBtn,
+      AppBtn,
 
 
     }
@@ -27,9 +28,7 @@ export default {
 
 <style scoped lang='scss'>
 header{
-  width: 1200px;
   padding: 3em 0;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }

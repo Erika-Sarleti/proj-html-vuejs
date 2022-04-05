@@ -4,18 +4,20 @@
   :info='objInfo'
   />
   <AppHome/>
+  <app-main/>
 </div>
 </template>
 
 <script>
 import InfoApp from './components/InfoApp.vue';
 import AppHome from './components/AppHome.vue';
-
+import AppMain from './components/AppMain.vue'
 export default {
   name: 'App',
   components: {
     InfoApp,
-    AppHome
+    AppHome,
+    AppMain
   }, 
   data(){
     return{

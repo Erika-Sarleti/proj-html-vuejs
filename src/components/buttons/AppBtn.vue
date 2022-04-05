@@ -1,10 +1,13 @@
 <template>
-  <button><a href="*">Read more</a> </button>
+  <button :class="cta == 'Get in touch' ? 'get-btn' : 'read-btn'"><a href="*" >{{cta}}</a> </button>
 </template>
 
 <script>
 export default {
-    name: 'ReadMoreBtn'
+    name: 'AppBtn',
+    props:{
+        cta:String,
+    }
 }
 </script>
 
@@ -15,13 +18,19 @@ button{
     font-size: 1.2rem;
     padding: .5rem 0;
     border: 2px solid #038483;
-    background-color: transparent;
     border-radius:3px ;
+}    
+.get-btn{
+    background-color: #038483;
+}    
     
-    a{
+.read-btn{
+    background-color: transparent;
+   
+}
+ a{
         color: white;
         text-decoration: none;
         padding: .5rem 1.2rem;
-    }
-}
+    }  
 </style>

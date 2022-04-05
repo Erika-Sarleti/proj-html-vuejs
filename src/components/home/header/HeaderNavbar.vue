@@ -1,8 +1,11 @@
 <template>
   <nav>
         <div class="navbar-item" v-for='item in navbArr' :key="item.section ">
-            <a :href="item.link">
+            <a v-if='item.name' :href="item.link">
                 {{item.name}}   
+            </a>
+            <a v-else :href="item.link">
+                <img :src="item.icon" alt="">
             </a>
         </div>
   </nav>
@@ -46,7 +49,7 @@ export default {
 
                 {
                     section: 'User-area',
-                    name: 'User',
+                    icon: require('../../../assets/img/user-regular.svg'),
                     link: '*',
                     
                 },
@@ -62,12 +65,18 @@ export default {
     display: inline-block;
     margin-right: 1.5rem;
     a{
-    color:white;
-    text-decoration: none;
-    text-transform: uppercase;
-    &:hover{
-        color:#038483;
+        color:#ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover{
+            color:#038483;
+        }
+    
     }
+    img{
+        width: 16px;
+        filter: invert(100%);
+    
     }
 }
     

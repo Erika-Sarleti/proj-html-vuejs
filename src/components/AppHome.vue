@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import AppHeader from '@/components/AppHeader.vue'
-import AppJumbotron from '@/components/AppJumbotron.vue'
+import AppHeader from '@/components/home/AppHeader.vue'
+import AppJumbotron from '@/components/home/AppJumbotron.vue'
 export default {
     name: 'AppHome',
     components:{
