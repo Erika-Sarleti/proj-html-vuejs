@@ -36,7 +36,9 @@
                 <h2 class="title"> Actions 	&amp; <span class='green-text'>Projects</span></h2> 
                 <projects-navbar/>
                 <div class="projects-container">
-
+                    <project-card v-for='(item,index) in projectArr' :key="index"
+                    :project='projectArr.project'
+                    />
                 </div>
           </div>
       </section>
@@ -49,6 +51,8 @@ import GreenBtn from './buttons/GreenBtn.vue'
 import AppBtn from './buttons/AppBtn.vue';
 import CountingCard from './main/CountingCard.vue';
 import ProjectsNavbar from './main/ProjectsNavbar.vue';
+import ProjectCard from './main/ProjectCard.vue';
+
 
 export default {
     name: 'AppMain',
@@ -61,27 +65,27 @@ export default {
             projectArr:[
                 {
                     project:'Academic professional program in social media',
-                    img:'',
+                    img:require('../assets/img/project-1.jpg'),
                 },
                 {
                     project:'President\'s speech at the annual meeting',
-                    img:'',
+                    img:require('../assets/img/project-2.jpg'),
                 },
                 {
                     project:'International business trip in Shanghai',
-                    img:'',
+                    img:require('../assets/img/project-3.jpg'),
                 },
                 {
                     project:'Technology workshop with education theme',
-                    img:'',
+                    img:require('../assets/img/project-4.jpg'),
                 },
                 {
                     project:'Donation of clothes and food to the partner NGO',
-                    img:'',
+                    img:require('../assets/img/project-5.jpg'),
                 },
                 {
                     project:'Confraternization of the procurement team',
-                    img:'',
+                    img:require('../assets/img/project-6.jpg'),
                 },
             ]
         }
@@ -91,7 +95,9 @@ export default {
         GreenBtn,
         AppBtn,
         CountingCard,
-        ProjectsNavbar }
+        ProjectsNavbar,
+        ProjectCard 
+        }
     
 }
 </script>
